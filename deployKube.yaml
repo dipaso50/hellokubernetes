@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: gin-hello
+  name: gin-hello
+spec:
+  containers:
+  - image: gin-hello
+    imagePullPolicy: Never
+    name: gin-hello
+    ports:
+    - containerPort: 8080
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
